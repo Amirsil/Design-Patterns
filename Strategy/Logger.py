@@ -2,15 +2,15 @@ from Logging import Logging
 
 
 class Logger():
-    strategy: Logging
+    loggingMethod: Logging
     
     def __init__(self, strategy: Logging):
-        self.strategy: Logging = strategy
+        self.loggingMethod: Logging = strategy
         
         
     def log(self, msg: str) -> None:
-        self.strategy.log(msg)
+        self.loggingMethod.log(msg)
         
     
-    def changeStrategy(self, strategy: Logging) -> None:
-        self.strategy = strategy
+    def changeLoggingMethod(self, strategy: Logging) -> None:
+        self.loggingMethod = strategy

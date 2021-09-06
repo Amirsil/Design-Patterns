@@ -1,4 +1,5 @@
-from Adapter.Interface import Interface
+import sys
+sys.path.append('../')
 from utils import Interface
 
 class SoundMaker(Interface):

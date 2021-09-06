@@ -6,6 +6,6 @@ logger: Logger = Logger(FileLogging("foo.txt"))
 
 logger.log("hi")
 
-logger.changeStrategy(ConsoleLogging())
+logger.changeLoggingMethod(ConsoleLogging())
 
 logger.log("foo")
